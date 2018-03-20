@@ -8,7 +8,7 @@ class file_logger(logger):
     """
     def __init__(self, log_level, filename='file_log.txt'):
         logger.__init__(self, log_level)
-        self.file = open(filename, 'a')
+        self.file = open(filename, 'w')
 
 
     """
