@@ -16,3 +16,10 @@ class logger:
     def log(self, log_level, message):
         return
 
+    
+    def should_log(self, level):
+        """
+        Returns True if log_level is less than or equal to
+        the class' threshold.
+        """
+        return level <= self.__log_level__
